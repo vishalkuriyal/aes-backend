@@ -4,7 +4,8 @@
   "info": {
     "singularName": "aes-job",
     "pluralName": "aes-jobs",
-    "displayName": "AES Job"
+    "displayName": "AES Job",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -46,14 +47,21 @@
       "type": "boolean"
     },
     "companyImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "minSalaryRange": {
+      "type": "biginteger"
+    },
+    "maxSalaryRange": {
+      "type": "biginteger"
     }
   }
 }

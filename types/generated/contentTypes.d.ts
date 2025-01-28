@@ -440,6 +440,7 @@ export interface ApiAesBlogAesBlog extends Struct.CollectionTypeSchema {
 export interface ApiAesJobAesJob extends Struct.CollectionTypeSchema {
   collectionName: 'aes_jobs';
   info: {
+    description: '';
     displayName: 'AES Job';
     pluralName: 'aes-jobs';
     singularName: 'aes-job';
@@ -471,6 +472,8 @@ export interface ApiAesJobAesJob extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     location: Schema.Attribute.String;
+    maxSalaryRange: Schema.Attribute.BigInteger;
+    minSalaryRange: Schema.Attribute.BigInteger;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
