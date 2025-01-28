@@ -76,6 +76,9 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }
