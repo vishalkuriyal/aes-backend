@@ -72,6 +72,10 @@
         "GBP"
       ],
       "default": "USD"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }

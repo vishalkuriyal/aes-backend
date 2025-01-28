@@ -477,6 +477,7 @@ export interface ApiAesJobAesJob extends Struct.CollectionTypeSchema {
     maxSalaryRange: Schema.Attribute.BigInteger;
     minSalaryRange: Schema.Attribute.BigInteger;
     publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
