@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aes_tags",
+  "info": {
+    "singularName": "aes-tag",
+    "pluralName": "aes-tags",
+    "displayName": "AES Tag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "aes_blogs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::aes-blog.aes-blog",
+      "mappedBy": "aes_tags"
+    }
+  }
+}

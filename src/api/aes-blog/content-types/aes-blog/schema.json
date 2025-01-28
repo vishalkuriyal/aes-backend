@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aes_blogs",
+  "info": {
+    "singularName": "aes-blog",
+    "pluralName": "aes-blogs",
+    "displayName": "AES Blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "aes_author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::aes-author.aes-author",
+      "inversedBy": "aes_blogs"
+    },
+    "aes_tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::aes-tag.aes-tag",
+      "inversedBy": "aes_blogs"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

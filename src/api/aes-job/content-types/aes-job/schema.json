@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aes_jobs",
+  "info": {
+    "singularName": "aes-job",
+    "pluralName": "aes-jobs",
+    "displayName": "AES Job"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "jobType": {
+      "type": "enumeration",
+      "enum": [
+        "Full Time",
+        "Part Time",
+        "Freelance",
+        "Internship"
+      ],
+      "default": "Full Time"
+    },
+    "location": {
+      "type": "string"
+    },
+    "companyWebsite": {
+      "type": "string"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "companyLinkedIn": {
+      "type": "string"
+    },
+    "companyTagline": {
+      "type": "string"
+    },
+    "listingExpiryDate": {
+      "type": "date"
+    },
+    "acceptingOpenings": {
+      "type": "boolean"
+    },
+    "companyImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
