@@ -460,6 +460,8 @@ export interface ApiAesJobAesJob extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    currency: Schema.Attribute.Enumeration<['INR', 'USD', 'EUR', 'GBP']> &
+      Schema.Attribute.DefaultTo<'USD'>;
     jobType: Schema.Attribute.Enumeration<
       ['Full Time', 'Part Time', 'Freelance', 'Internship']
     > &

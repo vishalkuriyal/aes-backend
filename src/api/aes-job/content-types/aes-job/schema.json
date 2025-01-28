@@ -62,6 +62,16 @@
     },
     "maxSalaryRange": {
       "type": "biginteger"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "INR",
+        "USD",
+        "EUR",
+        "GBP"
+      ],
+      "default": "USD"
     }
   }
 }
